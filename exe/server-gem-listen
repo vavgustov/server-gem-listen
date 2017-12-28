@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "server_gem_listen"
+
+Server::Gem::Listen.launch
