@@ -3,7 +3,7 @@ require "awesome_print"
 require "bundler"
 require "listen"
 require "server_gem_listen/listener"
-require "server_gem_listen/puma"
+require "server_gem_listen/server"
 require "server_gem_listen/version"
 
 module ServerGemListen
