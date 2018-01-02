@@ -12,7 +12,7 @@ module ServerGemListen
   def self.launch
     puts "#{NOTIFICATION_PREFIX} launch default server"
     Bundler.configure
-    Puma.start
+    Server.start
     Listener.start
   end
 end
