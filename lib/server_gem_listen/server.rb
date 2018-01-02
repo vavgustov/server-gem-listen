@@ -3,7 +3,7 @@ module ServerGemListen
     class << self
       def start
         Thread.new do
-          system 'rails s'
+          system './bin/rails s'
         end
       end
 
