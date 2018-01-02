@@ -10,7 +10,7 @@ module ServerGemListen
   NOTIFICATION_PREFIX = '=> Server Gem Listen:'
 
   def self.launch
-    puts "#{NOTIFICATION_PREFIX} launch default server"
+    puts "#{NOTIFICATION_PREFIX} launch server".green
     Bundler.configure
     Server.start
     Listener.start
