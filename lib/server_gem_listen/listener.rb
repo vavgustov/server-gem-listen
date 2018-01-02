@@ -2,13 +2,10 @@ module ServerGemListen
   module Listener
     class << self
       def start
-        listener = Listen.to(ENV['GEM_HOME']) do |*args|
-          notify(*args)
-          Puma.restart
-        end
-
-        listener.start
+        listen_events.start
         sleep
+      rescue Interrupt => e
+        puts "\n#{ServerGemListen::NOTIFICATION_PREFIX} interrupted"
       end
 
       private
@@ -18,8 +15,15 @@ module ServerGemListen
         files.each_pair do |key, value|
           next if value.empty?
           value.map! { |v| v.gsub(ENV['GEM_HOME'], '') }
-          ap "#{'File'.pluralize(value.size)} #{key}:"
+          puts "#{ServerGemListen::NOTIFICATION_PREFIX} #{'file'.pluralize(value.size)} #{key}"
           ap value
+        end
+      end
+
+      def listen_events
+        Listen.to(ENV['GEM_HOME']) do |*args|
+          notify(*args)
+          Puma.restart
         end
       end
     end
