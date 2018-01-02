@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["vavgustov@gmail.com"]
 
   spec.summary       = %q{Automatically reload rails server on gem source changes.}
-  spec.description   = %q{Automatically reload rails server on gem source changes.}
+  spec.description   = %q{Not for actual development or production usage. You can use this gem for quick 'scientific' experiments with core.}
   spec.homepage      = "https://github.com/vavgustov/server-gem-listen."
   spec.license       = "MIT"
 
@@ -26,8 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
+  spec.add_runtime_dependency "activesupport", "> 5.0", "< 6"
+  spec.add_runtime_dependency "awesome_print", ">= 1.6", "< 1.9"
   spec.add_runtime_dependency "bundler", "~> 1.16"
-  spec.add_runtime_dependency "awesome_print", "~> 1.8"
-  spec.add_runtime_dependency "activesupport", "~> 5.1"
   spec.add_runtime_dependency "listen", "~> 3.1"
 end
