@@ -8,7 +8,7 @@ module ServerGemListen
       end
 
       def restart
-        puts '=> Restart Puma'
+        puts "#{ServerGemListen::NOTIFICATION_PREFIX} Restart Puma"
         stop
         start
       end
