@@ -2,4 +2,4 @@
 
 require "server_gem_listen"
 
-Server::Gem::Listen.launch
+ServerGemListen.launch
