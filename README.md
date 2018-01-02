@@ -7,10 +7,11 @@ gem install server-gem-listen
 ```
 
 ## Usage
-
+Execute the command below under your project root:
 ```
 server-gem-listen
 ```
+This will launch `rails s` wrapped with gem watcher.
 
 ## License
 
