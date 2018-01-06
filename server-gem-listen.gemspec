@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Vladimir Avgustov"]
   spec.email         = ["vavgustov@gmail.com"]
 
-  spec.summary       = %q{Automatically reload rails server on gem source changes.}
-  spec.description   = %q{Not for actual development or production usage. You can use this gem for quick 'scientific' experiments with core.}
+  spec.summary       = %q{Automatically restart Rails server after changes in gem sources.}
+  spec.description   = %q{Automatically restart Rails server after changes in gem sources. You can use this gem for quick 'scientific' experiments with core or something like this.}
   spec.homepage      = "https://github.com/vavgustov/server-gem-listen."
   spec.license       = "MIT"
 
