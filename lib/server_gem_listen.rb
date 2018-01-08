@@ -7,7 +7,7 @@ require "server_gem_listen/server"
 require "server_gem_listen/version"
 
 module ServerGemListen
-  NOTIFICATION_PREFIX = '=> Server Gem Listen:'
+  NOTIFICATION_PREFIX = '=> Server Gem Listen:'.freeze
 
   def self.launch
     puts "#{NOTIFICATION_PREFIX} launch server".green
