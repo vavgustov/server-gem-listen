@@ -21,9 +21,10 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  
+  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_development_dependency "rspec", "~> 3.7"
+  spec.add_development_dependency "simplecov", "~> 0.15"
 
   spec.add_runtime_dependency "activesupport", "> 5.0", "< 6"
   spec.add_runtime_dependency "awesome_print", ">= 1.6", "< 1.9"
