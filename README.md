@@ -4,7 +4,9 @@
 Automatically restart Rails server after changes in gem sources. If you want to watch for changes
 in local gems you may want to use lightweight alternative [require_reloader](https://github.com/teohm/require_reloader).  
 
-> **Warning:** this gem not for actual development or production usage. You can use this gem for quick 'scientific' experiments with core or something like this.
+> **Warning:** this gem not for actual development or production usage. You can use it for quick 
+'scientific' experiments with core or something like this. I would recommend setting up an isolated 
+environment using something from rbenv/docker/vagrant.
 
 ![image](https://user-images.githubusercontent.com/312873/34501834-c411abb0-f021-11e7-9ce0-34abdc1ae1cb.png)
  
