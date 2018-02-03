@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "server_gem_listen"
+require_relative "../lib/server_gem_listen"
 
 ServerGemListen.launch

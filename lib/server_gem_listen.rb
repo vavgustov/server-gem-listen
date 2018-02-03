@@ -1,10 +1,10 @@
-require "active_support/all"
+require "active_support/core_ext/string/inflections"
 require "awesome_print"
 require "bundler"
 require "listen"
-require "server_gem_listen/listener"
-require "server_gem_listen/server"
-require "server_gem_listen/version"
+require_relative "server_gem_listen/listener"
+require_relative "server_gem_listen/server"
+require_relative "server_gem_listen/version"
 
 module ServerGemListen
   NOTIFICATION_PREFIX = '=> Server Gem Listen:'.freeze

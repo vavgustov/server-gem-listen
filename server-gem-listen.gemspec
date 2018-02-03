@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Vladimir Avgustov"]
   spec.email         = ["vavgustov@gmail.com"]
 
-  spec.summary       = %q{Automatically restart Rails server after changes in gem sources.}
-  spec.description   = %q{Automatically restart Rails server after changes in gem sources. You can use this gem for quick 'scientific' experiments with core or something like this.}
+  spec.summary       = %q{Automatically restart Rails server when you hack gem for experiments.}
+  spec.description   = %q{Automatically restart Rails server when you hack gem for experiments. You can use it for quick 'scientific' experiments with Rails core or gems.}
   spec.homepage      = "https://github.com/vavgustov/server-gem-listen."
   spec.license       = "MIT"
 
@@ -21,8 +21,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  
-  spec.add_development_dependency "rake", "~> 12.3"
 
   spec.add_runtime_dependency "activesupport", "> 5.0", "< 6"
   spec.add_runtime_dependency "awesome_print", ">= 1.6", "< 1.9"

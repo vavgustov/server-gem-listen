@@ -1,7 +1,6 @@
 /.bundle/
 /.yardoc
 /_yardoc/
-/Gemfile.lock
 /coverage/
 /doc/
 /pkg/
@@ -12,3 +11,4 @@
 .rspec_status
 
 /.idea/
+.ruby-version
