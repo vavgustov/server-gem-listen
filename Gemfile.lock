@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    server-gem-listen (0.2.3)
+    server-gem-listen (0.2.4)
       activesupport (> 5.0, < 6)
       awesome_print (>= 1.6, < 1.9)
       bundler (~> 1.16)
