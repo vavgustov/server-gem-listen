@@ -23,6 +23,9 @@ server-gem-listen
 ```
 This will launch `rails s` wrapped with gem watcher.
 
-## License
+## Notes
+* To speed up reboot you can use [bootsnap](https://github.com/Shopify/bootsnap) 
+* This gem is a quick experiment without test coverage
 
+## License
 Server Gem Listen is released under the [MIT License](https://opensource.org/licenses/MIT).
